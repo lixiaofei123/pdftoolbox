@@ -23,12 +23,25 @@ docker run -d --name pdftoolbox --restart=always -p 8082:8082 -v /data/pdftoolbo
 
 启动成功后，在浏览器中访问 http://ip:8082，如下图所示
 
-![pdf在线压缩首页](./images/index.jpg)
+![pdf工具箱首页](./images/index.jpg)
 
-点击【点击此处上传】按钮，选择要转换的文件，即可上传。目前支持三种压缩质量
+
+选择上方的【pdf压缩】，然后点击【点击此处上传】按钮，选择要转换的文件，即可上传并压缩。目前支持三种压缩质量
  - 高质量 (300dpi)
  - 中质量 (150dpi)
  - 低质量 (72dpi)
+
+如下图所示
+
+![压缩pdf](./images/compress.jpg)
+
+选择上方的【pdf压缩】，然后点击【点击此处上传】按钮，选择要转换的文件，即可上传并进行OCR文字提取。目前导出格式为txt。此过程会比较慢，请耐心等待。等待完毕后即可下载。
+
+![OCR文字提取](./images/ocr.jpg)
+
+识别结果如下图所示：
+
+![OCR文字提取结果](./images/ocr_result.jpg)
 
 ### 在Linux上部署
 

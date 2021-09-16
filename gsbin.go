@@ -63,7 +63,11 @@ func (w *CommandWriter) Write(p []byte) (n int, err error) {
 			w.progress(float32(w.handlePage)/float32(w.totalPage), Compressing, "")
 		} else if strings.Contains(line, "error") && w.state != Error {
 			reason := line[strings.Index(line, "error")+6:]
-			w.progress(100, Error, reason)
+			w.progress(1, Error, reason)
+			w.state = Error
+		} else if strings.Contains(line, "Error") && w.state != Error {
+			reason := line[strings.Index(line, "Error")+6:]
+			w.progress(1, Error, reason)
 			w.state = Error
 		}
 	}
