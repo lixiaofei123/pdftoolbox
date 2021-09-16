@@ -1,9 +1,11 @@
 
 [![docker build](https://github.com/lixiaofei123/pdftoolbox/actions/workflows/docker.yml/badge.svg)](https://github.com/lixiaofei123/pdftoolbox/actions/workflows/docker.yml)
 
-## 一个简单的在线压缩pdf网站
+## 一个简单的在线pdf工具箱
 
-使用 [GhostScript](https://www.ghostscript.com) 进行压缩
+本项目基于[GhostScript](https://www.ghostscript.com)进行开发,目前支持PDF压缩以及PDF文字提取(OCR)
+
+PDF文字提取目前支持的语言有 英文、简体中文、繁体中文、日文、韩文
 
 ## 使用方法
 
@@ -11,7 +13,11 @@
 
 建议使用Docker一键部署
 
+安装步骤
+
 ```
+mkdir -p /data/pdftoolbox/input
+mkdir -p /data/pdftoolbox/output
 docker run -d --name pdftoolbox --restart=always -p 8082:8082 -v /data/pdftoolbox/input:/opt/pdftoolbox/input  -v /data/pdftoolbox/output:/opt/pdftoolbox/output  mrlee326/pdftoolbox
 ```
 
