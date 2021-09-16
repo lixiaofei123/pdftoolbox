@@ -8,7 +8,7 @@ RUN go build -o pdftoolbox
 FROM ubuntu
 RUN apt-get -y update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 COPY gs /usr/bin/gs
-RUN make -p /usr/local/share/tessdata
+RUN mkdir -p /usr/local/share/tessdata
 RUN curl https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata -o /usr/local/share/tessdata/eng.traineddata
 RUN curl https://github.com/tesseract-ocr/tessdata_best/raw/main/chi_sim.traineddata -o /usr/local/share/tessdata/chi_sim.traineddata
 RUN curl https://github.com/tesseract-ocr/tessdata_best/raw/main/chi_sim_vert.traineddata -o /usr/local/share/tessdata/chi_sim_vert.traineddata
