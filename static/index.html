@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>PDF在线工具箱</title>
+  <link rel="stylesheet" type="text/css" href="/upload.css" />
+
+</head>
+
+<body>
+  <div id="fullscreen">
+    <div id="nav">
+      PDF在线工具箱
+    </div>
+    <div id="container">
+      <div id="noscrollbar">
+        <div class="checkboxGroup">
+          <div class="checkbox menu active" value="compress">PDF压缩</div>
+          <div class="checkbox menu" value="ocr">PDF文本提取</div>
+        </div>
+        <div id="upload-area">
+          <div id="upload-box">
+            <div class="upload-icon">
+              <svg class="icon" viewBox="0 0 1024 1024" width="80" height="80" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="#eee"
+                  d="M796.2 466.4c0-2.4 0.4-4.8 0.4-7.2 0-130-103.6-235.2-231.4-235.2-92.2 0-171.4 54.8-208.6 134-16.2-8.2-34.4-13-53.6-13-59 0-108.2 43.8-117.6 101C114.6 470.4 64 538.2 64 618c0 100.4 80.2 182 179 182L448 800l0-160-96.4 0 160.4-167.4 160.4 167.2-96.4 0 0 160 220.6 0c90.4 0 163.4-75 163.4-166.8C960 541.2 886.6 466.6 796.2 466.4z">
+                </path>
+              </svg>
+              <br>
+              <span class="upload-tips">点击此处上传</span>
+            </div>
+          </div>
+          <div class="allow-upload-tips">
+            <div  id="selectQuality">
+              <div class="checkboxGroup">
+                <span>请选择压缩质量</span>
+                <div class="checkbox quality" value="prepress">高质量(300 dpi)</div>
+                <div class="checkbox quality active" value="ebook">中等质量(150 dpi)</div>
+                <div class="checkbox quality" value="screen">低质量(72dpi)</div>
+              </div>
+            </div>
+            <div  id="selectLanguage" style="display: none;">
+              <div class="checkboxGroup">
+                <span>请选择额外语言</span>
+                <div class="checkbox language" value="chi_tra+chi_tra_vert">繁体中文</div>
+                <div class="checkbox language" value="jpn+jpn_vert">日文</div>
+                <div class="checkbox language" value="kor+kor_vert">韩语</div>
+              </div>
+              <div class="tips">已经默认支持简体中文和英文，额外选择语言将会降低转换速度</div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div id="upload-files">
+
+        </div>
+      </div>
+
+    </div>
+    <div id="foot">
+      <div class="foot-part foot-left" id="legalStatement">
+
+      </div>
+      <div class="foot-part  foot-center">
+        <span id="icp" style="display: none;"></span>
+        Power By <a href="https://www.lixf.cc" target="_blank">李小飞</a>
+      </div>
+      <div class="foot-part  foot-right">
+
+      </div>
+    </div>
+  </div>
+  <script src="/upload.js"></script>
+
+</body>
+
+</html>

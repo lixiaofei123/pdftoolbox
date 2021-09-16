@@ -1,0 +1,306 @@
+#fullscreen {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #E4E4E4;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#nav {
+  width: calc(100% - 40px);
+  padding: 15px 20px;
+  background: white;
+  text-align: center;
+}
+
+img {
+  padding: 0px;
+  margin: 0px;
+}
+
+#userinfo {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.buttons a {
+  color: #666666;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.buttons a:hover {
+  font-size: 15px;
+}
+
+#avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#container {
+  width: calc(100% - 20px);
+  max-width: 1320px;
+  height: calc(100% - 100px);
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#noscrollbar {
+  padding-top: 20px;
+  width: calc(100% + 17px);
+  height: calc(100% - 120px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#upload-area {
+  background: white;
+  padding: 40px 40px 20px 40px;
+  border-radius: 5px;
+  color: #666666;
+}
+
+#upload-box {
+  width: 100%;
+  height: 240px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#upload-box:hover {
+  border: 1px solid #409EFF;
+}
+
+.upload-icon {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.upload-tips {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.allow-upload-tips {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#upload-files {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.upload-file-card {
+  width: calc(50% - 12px);
+  height: 123px;
+  margin: 6px;
+  flex-shrink: 1;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  display: flex;
+}
+
+.upload-file-thumb {
+  width: 160px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.file-links-box {
+  flex: 1;
+  padding: 10px;
+}
+
+.download_button {
+  display: block;
+  width: 100px;
+  padding: 5px 10px;
+  background: #069af1;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.download_button:hover{
+  background: #0588d4;
+}
+
+.fileinfo{
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: grey;
+}
+
+.link {
+  width: calc(100% - 24px);
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid grey;
+  background: #eee;
+}
+
+.copytip {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  z-index: 1;
+  padding: 2px 8px;
+  background: #61cc00bd;
+  color: white;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.upload-progress {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.upload-error-cover {
+  position: absolute;
+  top: 0px;
+  bottom: 5px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 5px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+.progress-bar {
+  height: 3px;
+  background-color: #409EFF;
+}
+
+#foot {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 10px 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  color: #666666;
+  font-size: 14px;
+}
+
+#foot a {
+  color: #666666;
+  font-size: 14px;
+}
+
+.foot-part {
+  flex: 1;
+}
+
+.foot-left {
+  text-align: left;
+}
+
+.foot-center {
+  text-align: center;
+}
+
+.foot-right {
+  text-align: right;
+}
+
+.checkboxGroup {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.checkboxGroup .checkbox {
+  padding: 5px 20px;
+  cursor: pointer;
+  border: 1px solid rgb(235, 235, 235);
+  margin-left: 15px;
+}
+
+.checkboxGroup .checkbox:hover {
+  background: #409EFF;
+  color: white;
+}
+
+.menu{
+  padding: 10px 20px;
+  background: white;
+}
+
+
+.active {
+  background: #409EFF;
+  color: white;
+}
+
+
+@media screen and (max-width: 767px) {
+  .foot-left {
+    display: none;
+  }
+
+  .foot-right {
+    display: none;
+  }
+
+  .upload-file-card {
+    width: 100%;
+  }
+
+  #noscrollbar {
+    padding-top: 20px;
+    width: 100%;
+    height: calc(100% - 60px);
+  }
+
+  #upload-area {
+    padding: 20px;
+  }
+
+  #noscrollbar::-webkit-scrollbar {
+    width: 0 !important
+  }
+
+}
