@@ -56,7 +56,7 @@ func CompressFile(rw http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	outFile := fmt.Sprintf("output/%s_%s_%s.txt", setting, uuid[:6], handler.Filename)
+	outFile := fmt.Sprintf("output/%s_%s_%s", setting, uuid[:6], handler.Filename)
 
 	go func(uuid string, dataLen int) {
 
